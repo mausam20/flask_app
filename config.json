@@ -1,0 +1,38 @@
+
+{"development":{
+    "project_id" : "big-query-im",
+    "service_email": "aasthaprasad@devops-im.iam.gserviceaccount.com",
+    "service_account_json": "big-query-im-dcd6bd8e59b3.json",
+    "table_id":"big-query-im.risk_score.glusr_risk_count_latest",
+    "default_columns":["bi_logic","pns_defaulter","bs_ticket","activation_ticket","nach_bounce","glusr_suspect_tagging","bad_rating_comment","latest_hrs_tag","bi_trigger_count"],
+    "agg_columns":["bi_logic","pns_defaulter","bs_ticket","activation_ticket","nach_bounce","glusr_suspect_tagging","bad_rating_comment"],
+    "risk_score_levels":["low","medium","high"],
+    "risk_score_per_range":{"bi_trigger_count":{"low":[0,0,0],"medium":[1,1,11.8],"high":[2,28], "very high":null},
+    "bs_ticket":{"low":[1,1,10.24],"medium":[2,5,13],"high":[6,9,18], "very high":[10,100]},
+    "activation_ticket":{"low":[1,1,9.06],"medium":[2,2,31.5],"high":[3,38],"very high": null},
+    "latest_hrs_tag":{"low":[0,0,0],"medium":[1,1,50],"high":[2,70],"very high": null},
+    "bad_rating_comment":{"low":[1,1,4.72],"medium":[2,4,8.3],"high":[5,9,13],"very high":[10,100]},
+    "pns_defaulter":{"low":[1,1,1],"medium":[2,2,2],"high":[3,3],"very high": null},
+    "nach_bounce":{"low":[1,1,1],"medium":[2,2,2],"high":[3,3],"very high": null}},
+    "mod_id":["gladmin"]
+
+},
+"production":{
+    "project_id" : "big-query-prod-395506",
+    "service_email": "aasthaprasad@devops-im.iam.gserviceaccount.com",
+    "service_account_json": "big-query-prod-395506-203bde3888bb.json",
+    "table_id":"big-query-prod-395506.risk_score_prod.glusr_risk_count_latest",
+    "default_columns":["bi_logic","pns_defaulter","bs_ticket","activation_ticket","nach_bounce","glusr_suspect_tagging","bad_rating_comment","latest_hrs_tag","bi_trigger_count"],
+    "agg_columns":["bi_logic","pns_defaulter","bs_ticket","activation_ticket","nach_bounce","glusr_suspect_tagging","bad_rating_comment"],
+    "risk_score_levels":["low","medium","high"],
+    "risk_score_per_range":{"bi_trigger_count":{"low":[0,0,0],"medium":[1,1,11.8],"high":[2,28], "very high":null},
+    "bs_ticket":{"low":[1,1,10.24],"medium":[2,5,13],"high":[6,9,18], "very high":[10,100]},
+    "activation_ticket":{"low":[1,1,9.06],"medium":[2,2,31.5],"high":[3,38],"very high": null},
+    "latest_hrs_tag":{"low":[0,0,0],"medium":[1,1,50],"high":[2,70],"very high": null},
+    "bad_rating_comment":{"low":[1,1,4.72],"medium":[2,4,8.3],"high":[5,9,13],"very high":[10,100]},
+    "pns_defaulter":{"low":[1,1,1],"medium":[2,2,2],"high":[3,3],"very high": null},
+    "nach_bounce":{"low":[1,1,1],"medium":[2,2,2],"high":[3,3],"very high": null}},
+    "mod_id":["gladmin"]
+
+}
+}

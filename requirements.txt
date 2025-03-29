@@ -1,0 +1,9 @@
+Flask==2.3.2
+google-cloud-storage
+PyJWT==2.7.0
+marshmallow
+google-cloud-bigquery
+Flask-MonitoringDashboard
+pandas
+numpy
+gunicorn==19.9.0
